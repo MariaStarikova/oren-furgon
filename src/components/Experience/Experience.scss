@@ -1,0 +1,36 @@
+@import '../../constants/constants.scss';
+
+.experience {
+  padding: 150px 0px 180px 100px;
+  background-color: $color-background-site;
+}
+
+.experience__about {
+  color: $color-button-hover;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+  margin-bottom: 60px;
+  border-top: 1px solid $color-grey-line;
+}
+
+.experience__container {
+  @extend %flex-rows;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience__title {
+  font-size: 70px;
+  line-height: 90%;
+  font-weight: 500;
+  color: $yellow-color;
+  margin: 0;
+}
+
+.experience__text {
+  width: 50%;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $color-button-hover;
+}

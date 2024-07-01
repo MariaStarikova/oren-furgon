@@ -1,0 +1,95 @@
+@import '../../constants//constants.scss';
+
+.header {
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.header__brand {
+  @extend %flex-row-align-center;
+  gap: 50px;
+  margin-left: 100px;
+}
+
+.header__logo {
+  height: 63px;
+}
+
+.header__info {
+  @extend %flex-row-align-center;
+  gap: 50px;
+  margin-right: 100px;
+}
+
+.header__link-phone {
+  @extend %flex-row-align-center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.header__link-phone:hover .header__subtitle {
+  @extend %hover-for-links;
+}
+
+.header__link:hover {
+  @extend %hover-for-links;
+}
+
+.header__group {
+  @extend %flex-row-align-center;
+  gap: 10px;
+}
+
+.header__icon {
+  height: 24px;
+}
+
+.header__subtitle {
+  margin: 0;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #2c2c2c;
+}
+
+.header__services {
+}
+
+.header__button-popup {
+  border: none;
+  background-color: transparent;
+  @extend %flex-row-align-center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.header__button-popup:hover .header__subtitle {
+  @extend %hover-for-links;
+}
+
+.header__arrow {
+  transform: rotate(90deg);
+  height: 10px;
+}
+
+.header__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+
+.header__button-phone { 
+  @include yellow-button($color-button-hover);
+}

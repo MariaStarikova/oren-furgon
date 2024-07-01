@@ -1,0 +1,58 @@
+$yellow-color: #fec110;
+$color-button-hover: #2c2c2c;
+$color-background: #313232;
+$color-text-white: #fff;
+$color-text-grey: #989898;
+$color-background-site: #E4E4E4;
+$color-grey-line: #b6b6b6;
+
+%hover-for-links {
+  color: $yellow-color;
+  transition: color 0.4s linear;
+}
+
+%flex-row-align-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+%flex-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-rows {
+    display: flex;
+    flex-direction: row;
+  }
+
+@mixin yellow-button($color) {
+  & {
+    background-color: $yellow-color;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+
+  p {
+    padding: 12px 20px;
+    margin: 0;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $color-button-hover;
+  }
+
+  &:hover {
+    background-color: $color;
+    transition: background-color 0.4s linear;
+  }
+
+  &:hover p {
+    color: $color-text-white;
+    transition: color 0.4s linear;
+  }
+}

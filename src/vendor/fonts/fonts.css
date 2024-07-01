@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'ArialNova', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ArialNova.woff2) format('woff2'),
+    url(../fonts/ArialNova.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'ArialNova', 'Arial', sans-serif;
+  font-style: bold;
+  font-weight: 500;
+  src: url(../fonts/ArialNova-Bold.woff2) format('woff2'),
+    url(../fonts/ArialNova-Bold.woff) format('woff');
+}
+

@@ -1,0 +1,139 @@
+@import '../../constants/constants.scss';
+
+.info {
+  @extend %flex-row-align-center;
+  height: 450px;
+  padding-left: 100px;
+  // padding-right: 100px;
+  background-color: $color-background;
+}
+
+.info__all {
+  @extend %flex-columns;
+  width: 50%;
+  height: 100%;
+  // padding-left: 20px;
+  padding-right: 20px;
+  // background-color: $color-background;
+}
+
+.info__title {
+  font-size: 45px;
+  line-height: 0.95;
+  font-weight: 400;
+  color: $color-text-white;
+  margin: 80px 0 40px;
+}
+
+.info__phone {
+  text-decoration: none;
+  color: $yellow-color;
+  font-size: 45px;
+  line-height: 0.95;
+  font-weight: 400;
+  margin: 20px 0 70px;
+}
+
+.info__schedule {
+  @extend %flex-columns;
+  margin-bottom: 10px;
+}
+
+.info__about {
+  color: $color-text-grey;
+  margin-bottom: 5px;
+}
+
+.info__text {
+  color: $color-text-white;
+}
+
+.info__adress {
+  @extend %flex-columns;
+  margin-bottom: 10px;
+}
+
+.info__link {
+  margin-top: 60px;
+}
+
+.info__button-services {
+  @include yellow-button($color-button-hover);
+}
+
+.info__button-text {
+}
+
+.info__slides {
+  width: 50%;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.info__slides-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.info__array {
+  // position: relative;
+  width: 100%;
+  height: 100%;
+  // z-index: 1;
+  // display: flex;
+  // transition-property: transform;
+  // box-sizing: content-box;
+}
+
+.info__photo {
+  // display: block;
+  height: 100%;
+  width: 100%;
+  // background-size: cover;
+  object-fit: fill;
+  // object-fit: contain;
+}
+
+.info__slider {
+  @extend %flex-rows;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+}
+
+.info__buttons {
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.info__button {
+  @include yellow-button($color-text-white);
+  margin-right: 20px;
+}
+
+.info__arrow {
+  height: 50px;
+}
+
+.info__button:hover .info__arrow {
+  color: $color-text-white;
+  transition: color 0.4s linear;
+}
+
+.info__arrow_left {
+  transform: rotate(180deg);
+}
+
+.info__quantity-photo {
+  color: $color-text-white;
+  margin: 0;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.4;
+  margin-right: 30px;
+  z-index: 2;
+}
