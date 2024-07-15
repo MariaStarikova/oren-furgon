@@ -42,7 +42,7 @@ function Services() {
   };
 
   return (
-    <section className="services">
+    <section className="services" id='services'>
       <h2 className="services__title">Услуги</h2>
       <ul className="services__container">
         <li className="services__card">
