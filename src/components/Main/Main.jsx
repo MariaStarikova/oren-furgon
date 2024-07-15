@@ -4,6 +4,7 @@ import Experience from '../Experience/Experience';
 import Services from '../Services/Services';
 import Brand from '../Brand/Brand';
 import Map from '../Map/Map';
+import Reviews from '../Reviews/Reviews';
 
 function Main() {
     return(
@@ -13,6 +14,7 @@ function Main() {
             <Services />
             <Brand />
             <Map />
+            <Reviews />
         </main>
     )
 }

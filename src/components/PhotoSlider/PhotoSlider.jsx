@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './PhotoSlider.scss';
-import BigArrow from '../../images/icon_arrow_big.svg';
 import {photos} from '../../constants/Photos.js';
 
 function PhotoSlider() {
@@ -26,10 +25,8 @@ function PhotoSlider() {
       <div className="info__slider">
         <div className="info__buttons">
           <button className="info__button" onClick={goToPrevious}>
-            <img className="info__arrow info__arrow_left" src={BigArrow} alt="" />
           </button>
-          <button className="info__button" onClick={goToNext}>
-            <img className="info__arrow" src={BigArrow} alt="" />
+          <button className="info__button info__button_right" onClick={goToNext}>
           </button>
         </div>
         <p className="info__quantity-photo">{currentIndex + 1}/4</p>

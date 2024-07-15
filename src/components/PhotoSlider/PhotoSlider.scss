@@ -41,21 +41,25 @@
   }
   
   .info__button {
-    @include yellow-button($color-text-white);
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  
-  .info__arrow {
+    // @include yellow-button($color-text-white);
+    background-image: url('../../images/big_aroow_yellow.svg');
+    // background-size: 100%;
+    // background-position: center;
+    border-radius: 50%;
     height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
   }
-  
-  .info__button:hover .info__arrow {
-    color: $color-text-white;
-    transition: color 0.4s linear;
+
+  .info__button:hover {
+    background-image: url('../../images/big_arrow_grey.svg');
+    transition: background-image 0.4s linear;
   }
-  
-  .info__arrow_left {
+
+  .info__button_right {
     transform: rotate(180deg);
   }
   
