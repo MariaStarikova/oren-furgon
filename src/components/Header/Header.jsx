@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 import IconPhone from '../../images/icon__phone.svg';
 import IconArrow from '../../images/icon__arrow.svg';
 
@@ -12,7 +12,7 @@ function Header() {
           <img className="header__logo" alt="" src={Logo} />
             <a className="header__link header__link-phone" href="tel:+79320108888">
             <img className="header__icon" alt="" src={IconPhone} />
-            <h2 class="header__subtitle">+7 (932) 010-88-88</h2>
+            <h2 className="header__subtitle">+7 (932) 010-88-88</h2>
             </a>
         </div>
         <div className="header__info">

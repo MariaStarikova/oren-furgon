@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Information.scss';
-import Photo from '../../images/photo.jpeg';
-import BigArrow from '../../images/icon_arrow_big.svg';
-// import Avtoliga from '../../images/avtoliga.png';
+import PhotoSlider from '../PhotoSlider/PhotoSlider';
 
 function Information() {
+  const [imageWidth, setImageWidth] = useState(window.innerWidth / 2);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setImageWidth(window.innerWidth / 2);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Устанавливаем начальное значение ширины изображения
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className="info">
       <div className="info__all">
@@ -21,28 +36,13 @@ function Information() {
           <span className="info__text">г. Оренбург, ул. Лесозащитная, д. 20</span>
         </div>
         <a className="info__link" href="#ксписку">
-        <button className="info__button-services">
-          <p className="info__button-text">Наши услуги</p>
+          <button className="info__button-services">
+            <p className="info__button-text">Наши услуги</p>
           </button>
-          </a>
+        </a>
       </div>
-      <div className="info__slides">
-        <div className="info__slides-container">
-        <div className="info__array">
-          <img className="info__photo" src={Photo} alt="" />
-        </div>
-        <div className="info__slider">
-          <div className="info__buttons">
-            <button className="info__button">
-              <img className="info__arrow info__arrow_left" src={BigArrow} alt="" />
-            </button>
-            <button className="info__button">
-              <img className="info__arrow" src={BigArrow} alt="" />
-            </button>
-          </div>
-          <p className="info__quantity-photo">1/8</p>
-        </div>
-        </div>
+      <div className="info__slides" style={{ width: imageWidth }}>
+        <PhotoSlider />
       </div>
     </section>
   );
