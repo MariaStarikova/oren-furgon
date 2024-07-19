@@ -1,0 +1,73 @@
+@import '../../constants/constants.scss';
+
+.reviews {
+  background-color: $color-background;
+  padding: 100px 20px 100px 100px;
+  height: 430px;
+}
+
+.reviews__top {
+  @extend %flex-rows;
+  align-items: flex-start;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $color-text-white;
+}
+
+.reviews__title {
+  color: $color-text-white;
+  margin: 0;
+  margin-right: 200px;
+  font-size: 45px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.reviews__estimation {
+  color: $yellow-color;
+  font-size: 90px;
+  line-height: 0.9;
+  font-weight: 400;
+  margin: 0;
+}
+
+.reviews__subtitle {
+  color: $color-text-grey;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+  margin: 0;
+  margin-left: auto;
+}
+
+.reviews__bottom {
+  @extend %flex-rows;
+}
+
+.reviews__img {
+  max-width: 850px;
+  object-fit: cover;
+}
+
+.reviews__buttons {
+  margin-left: auto;
+}
+
+.reviews__button {
+  background-image: url('../../images/big_arrow_grey_2.svg');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews__button:hover {
+  background-image: url('../../images/big_arrow_white.svg');
+  transition: background-image 0.4s linear;
+}
+
+.reviews__button_right {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}

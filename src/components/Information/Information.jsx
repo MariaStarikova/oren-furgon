@@ -35,7 +35,7 @@ function Information() {
           <span className="info__about">По адресу:</span>
           <span className="info__text">г. Оренбург, ул. Лесозащитная, д. 20</span>
         </div>
-        <a className="info__link" href="#ксписку">
+        <a className="info__link" href="#services">
           <button className="info__button-services">
             <p className="info__button-text">Наши услуги</p>
           </button>
