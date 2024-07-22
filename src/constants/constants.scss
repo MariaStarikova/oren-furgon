@@ -3,7 +3,7 @@ $color-button-hover: #2c2c2c;
 $color-background: #313232;
 $color-text-white: #fff;
 $color-text-grey: #989898;
-$color-background-site: #E4E4E4;
+$color-background-site: #e4e4e4;
 $color-grey-line: #b6b6b6;
 
 %hover-for-links {
@@ -23,9 +23,39 @@ $color-grey-line: #b6b6b6;
 }
 
 %flex-rows {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
+}
+
+%text-size-45 {
+  font-size: 45px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+%text-size-28 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+%text-size-21 {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+%text-size-16 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+%text-size-14 {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+}
 
 @mixin yellow-button($color) {
   & {

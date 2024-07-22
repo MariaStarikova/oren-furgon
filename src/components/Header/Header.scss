@@ -55,9 +55,7 @@
   margin: 0;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
+  @extend %text-size-16;
   color: #2c2c2c;
 }
 
@@ -84,9 +82,7 @@
 .header__link {
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
+  @extend %text-size-16;
   color: #2c2c2c;
   cursor: pointer;
 }

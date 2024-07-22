@@ -18,9 +18,7 @@
   color: $color-text-white;
   margin: 0;
   margin-right: 200px;
-  font-size: 45px;
-  line-height: 0.95;
-  font-weight: 400;
+  @extend %text-size-45;
 }
 
 .reviews__estimation {

@@ -13,9 +13,7 @@
 }
 
 .brand__title {
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: 400;
+  @extend %text-size-28;
   margin: 0;
   max-width: 460px;
 }
@@ -41,8 +39,6 @@
 }
 
 .card__text {
-  font-size: 21px;
-  line-height: 1.2;
-  font-weight: 400;
+  @extend %text-size-21;
   margin: 0;
 }
