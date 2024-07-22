@@ -7,16 +7,16 @@ import Map from '../Map/Map';
 import Reviews from '../Reviews/Reviews';
 
 function Main() {
-    return(
-        <main>
-            <Information />
-            <Experience />
-            <Services />
-            <Brand />
-            <Map />
-            <Reviews />
-        </main>
-    )
+  return (
+    <main>
+      <Information />
+      <Experience />
+      <Services />
+      <Brand />
+      <Map />
+      <Reviews />
+    </main>
+  );
 }
 
-export default Main
+export default Main;

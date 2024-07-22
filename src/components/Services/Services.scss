@@ -1,99 +1,89 @@
 @import '../../constants/constants.scss';
 
 .services {
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: $color-background-site;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: $color-background-site;
 }
 
 .services__title {
-    margin: 0 0 60px;
-    font-size: 45px;
-    line-height: 0.95;
-    font-weight: 400;
+  margin: 0 0 60px;
+  @extend %text-size-45;
 }
 
 .services__container {
-    // max-width: 1280px;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 40px;
-    padding-left: 0;
-    padding-bottom: 100px;
-    margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 40px;
+  padding-left: 0;
+  padding-bottom: 100px;
+  margin: 0;
 }
 
 .services__card {
-    width: 100%;
-    background-color: $color-text-white;
-    // width: calc(100% / 3 - 40px);
+  width: 100%;
+  background-color: $color-text-white;
 }
 
 .card__top {
-    width: 100%;
-    height: calc(100% - 200px);
+  width: 100%;
+  height: calc(100% - 200px);
 }
 
 .card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card__description {
-    margin: 0;
-    display: flex;
-    @extend %flex-rows;
-    justify-content: space-between;
-    height: 200px;
-    align-items: center;
-    // background-color: $color-text-white;
-    // padding: 100px 40px 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+  margin: 0;
+  display: flex;
+  @extend %flex-rows;
+  justify-content: space-between;
+  height: 200px;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .description__left {
-    
 }
 
 .description__text {
-    margin-left: 0;
-    font-size: 21px;
-    font-weight: 400;
-    max-width: 240px;
+  margin-left: 0;
+  @extend %text-size-21;
+  max-width: 240px;
 }
 
 .description__number {
-    margin: 0;
-    font-size: 21px;
-    font-weight: 400;
-    color: $color-text-grey;
+  margin: 0;
+  @extend %text-size-21;
+  color: $color-text-grey;
 }
 
 .description__button {
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    background-image: url('../../images/aroow_yellow.svg');
-    height: 40px;
-    width: 40px;
-    // margin-right: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url('../../images/aroow_yellow.svg');
+  height: 40px;
+  width: 40px;
 }
 
 .services__card:hover .description__button {
-    background-image: url('../../images/arrow_grey.svg');
-    transition: background-image 0.4s linear;
+  background-image: url('../../images/arrow_grey.svg');
+  transition: background-image 0.4s linear;
 }
 
 .services__card:hover {
-    background-color: $yellow-color;
-    transition: background-color 0.4s linear;
+  background-color: $yellow-color;
+  transition: background-color 0.4s linear;
 }
 
 .services__card:hover .description__number {
-    color: $color-text-white;
-    transition: color 0.4s linear;
+  color: $color-text-white;
+  transition: color 0.4s linear;
 }

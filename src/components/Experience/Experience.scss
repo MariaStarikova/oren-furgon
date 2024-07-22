@@ -1,7 +1,7 @@
 @import '../../constants/constants.scss';
 
 .experience {
-  padding: 150px 0px 165px 100px;
+  padding: 150px 20px 165px 100px;
   background-color: $color-background-site;
 }
 
@@ -30,13 +30,10 @@
 }
 
 .experience__right {
-  margin-right: 20px;
 }
 
 .experience__text {
   margin: 0 0 15px;
-  // width: 50%;
-  font-size: 28px;
-  line-height: 1.2;
+  @extend %text-size-28;
   color: $color-button-hover;
 }
