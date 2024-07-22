@@ -13,13 +13,13 @@ function Map() {
       <div className="map__container">
         <img src={MapImg} alt="" className="map__geography" />
         <div className="map__right">
-          <img src={Logo} alt="" className="map__logo"  />
+          <img src={Logo} alt="" className="map__logo" />
           <h2 className="map__title">География поставок</h2>
         </div>
-        <img src={Geometric_1} alt='' className='map__geometric-1'/>
-        <img src={Geometric_2} alt='' className='map__geometric-2'/>
-        <img src={Background} alt='' className='map__background'/>
-        <img src={BackgroundYellow} alt='' className='map__background-yellow'/>
+        <img src={Geometric_1} alt="" className="map__geometric-1" />
+        <img src={Geometric_2} alt="" className="map__geometric-2" />
+        <img src={Background} alt="" className="map__background" />
+        <img src={BackgroundYellow} alt="" className="map__background-yellow" />
       </div>
     </section>
   );

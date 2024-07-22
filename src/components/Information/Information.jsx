@@ -20,6 +20,13 @@ function Information() {
     };
   }, []);
 
+  const handleServicesClick = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="info">
       <div className="info__all">
@@ -35,11 +42,9 @@ function Information() {
           <span className="info__about">По адресу:</span>
           <span className="info__text">г. Оренбург, ул. Лесозащитная, д. 20</span>
         </div>
-        <a className="info__link" href="#services">
-          <button className="info__button-services">
-            <p className="info__button-text">Наши услуги</p>
-          </button>
-        </a>
+        <button className="info__button-services" onClick={handleServicesClick}>
+          <p className="info__button-text">Наши услуги</p>
+        </button>
       </div>
       <div className="info__slides" style={{ width: imageWidth }}>
         <PhotoSlider />

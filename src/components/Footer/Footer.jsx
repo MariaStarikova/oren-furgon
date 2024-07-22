@@ -6,13 +6,13 @@ function Footer() {
     window.location.href = 'tel:+79320108888';
   };
 
-//Можно сделать отправку сообщения на WhatsApp
-//   const handleWhatsAppClick = () => {
-//     const phoneNumber = '89823585320'; 
-//     const message = 'Привет, я хочу записаться на консультацию'; 
-//     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-//     window.open(url, '_blank');
-//   };
+  //Можно сделать отправку сообщения на WhatsApp
+  //   const handleWhatsAppClick = () => {
+  //     const phoneNumber = '89823585320';
+  //     const message = 'Привет, я хочу записаться на консультацию';
+  //     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  //     window.open(url, '_blank');
+  //   };
 
   return (
     <footer className="footer">

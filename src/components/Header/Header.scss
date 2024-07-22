@@ -8,8 +8,6 @@
   flex-direction: row;
   justify-content: space-between;
   height: 150px;
-  // margin-top: 20px;
-  // margin-bottom: 40px;
 }
 
 .header__brand {
@@ -93,6 +91,6 @@
   cursor: pointer;
 }
 
-.header__button-phone { 
+.header__button-phone {
   @include yellow-button($color-button-hover);
 }
