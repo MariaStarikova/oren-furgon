@@ -123,7 +123,6 @@
   @media screen and (min-width: 768px) and (max-width: 1140px) {
     font-size: 11px;
     line-height: 1.4;
-    // max-width: 60px;
   }
   @media screen and (min-width: 550px) and (max-width: 767px) {
     font-size: 10px;
@@ -165,15 +164,10 @@
 .reviews__img {
   max-width: 850px;
   object-fit: cover;
-  // @media screen and (min-width: 550px) and (max-width: 650px) {
-  //   height: 161px;
-  // }
   @media screen and (max-width: 549px) {
     width: 100%;
-    // margin-bottom: 0px;
   }
   @media screen and (min-width: 550px) and (max-width: 767px) {
-    // width: calc(100% - 60px);
     width: 100%;
     margin-bottom: 20px;
   }

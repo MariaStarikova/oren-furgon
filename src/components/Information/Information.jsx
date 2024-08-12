@@ -7,20 +7,20 @@ function Information() {
 
   useEffect(() => {
     const handleResize = () => {
-      setImageWidth(window.innerWidth / 2);
+      let newWidth;
       if (window.innerWidth >= 1920) {
-        return setImageWidth(1920/2);
+        newWidth = 1920 / 2;
+      } else if (window.innerWidth >= 1140 && window.innerWidth < 1920) {
+        newWidth = window.innerWidth / 2;
+      } else {
+        newWidth = window.innerWidth;
       }
-      if (window.innerWidth <= 1140) {
-        return setImageWidth(window.innerWidth);
-      }
+      setImageWidth(newWidth);
     };
-
+  
     window.addEventListener('resize', handleResize);
-
-    // Устанавливаем начальное значение ширины изображения
     handleResize();
-
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
