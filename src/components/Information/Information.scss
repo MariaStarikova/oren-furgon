@@ -21,21 +21,23 @@
   width: 50%;
   height: 100%;
   padding-right: 20px;
+  overflow: hidden;
+  @media screen and (max-width: 1140px) {
+    padding-right: 0px;
+    max-width: 100%;
+    width: 90%;
+  } 
   @media screen and (min-width: 768px) and (max-width: 1140px) {
     padding-left: 50px;
-    width: 100%;
   } 
   @media screen and (min-width: 550px) and (max-width: 767px) {
     padding-left: 30px;
-    width: 100%;
   }
   @media screen and (min-width: 350px) and (max-width: 549px) {
     padding-left: 15px;
-    width: 100%;
   }
   @media screen and (max-width: 349px) {
     padding-left: 10px;
-    width: 100%;
   }
 }
 
@@ -121,10 +123,7 @@
   @media screen and (min-width: 550px) and (max-width: 767px) {
     margin: 20px 0 30px;
   }
-  @media screen and (min-width: 350px) and (max-width: 549px) {
-    margin: 30px 0 30px;
-  }
-  @media screen and (max-width: 349px) {
+  @media screen and (max-width: 549px) {
     margin: 30px 0 30px;
   }
 }
