@@ -8,6 +8,12 @@ function Information() {
   useEffect(() => {
     const handleResize = () => {
       setImageWidth(window.innerWidth / 2);
+      if (window.innerWidth >= 1920) {
+        return setImageWidth(1920/2);
+      }
+      if (window.innerWidth <= 1140) {
+        return setImageWidth(window.innerWidth);
+      }
     };
 
     window.addEventListener('resize', handleResize);

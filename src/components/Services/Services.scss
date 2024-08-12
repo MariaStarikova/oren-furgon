@@ -4,11 +4,34 @@
   padding-left: 100px;
   padding-right: 100px;
   background-color: $color-background-site;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 349px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .services__title {
   margin: 0 0 60px;
   @extend %text-size-45;
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 549px) {
+    font-size: 38px;
+    margin: 0 0 40px;
+  }
 }
 
 .services__container {
@@ -20,6 +43,11 @@
   padding-left: 0;
   padding-bottom: 100px;
   margin: 0;
+  @media screen and (max-width: 1140px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 20px;
+  }
 }
 
 .services__card {
@@ -30,6 +58,12 @@
 .card__top {
   width: 100%;
   height: calc(100% - 200px);
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
+    height: calc(100% - 150px);
+  }
+  @media screen and (max-width: 549px) {
+    height: calc(100% - 100px);
+  }
 }
 
 .card__img {
@@ -47,6 +81,14 @@
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
+    height: 150px;
+  }
+  @media screen and (max-width: 549px) {
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .description__left {
@@ -56,12 +98,29 @@
   margin-left: 0;
   @extend %text-size-21;
   max-width: 240px;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    font-size: 18px;
+    margin: 10px 0 10px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 17px;
+    margin: 10px 0 10px;
+  }
 }
 
 .description__number {
   margin: 0;
   @extend %text-size-21;
   color: $color-text-grey;
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 17px;
+  }
 }
 
 .description__button {

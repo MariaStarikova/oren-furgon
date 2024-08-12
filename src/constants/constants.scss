@@ -86,3 +86,33 @@ $color-grey-line: #b6b6b6;
     transition: color 0.4s linear;
   }
 }
+
+@mixin yellow-button-small($color) {
+  & {
+    background-color: $yellow-color;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+
+  p {
+    padding: 8px 10px;
+    margin: 0;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $color-button-hover;
+  }
+
+  &:hover {
+    background-color: $color;
+    transition: background-color 0.4s linear;
+  }
+
+  &:hover p {
+    color: $color-text-white;
+    transition: color 0.4s linear;
+  }
+}

@@ -3,6 +3,18 @@
 .experience {
   padding: 150px 20px 165px 100px;
   background-color: $color-background-site;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    padding: 100px 20px 115px 50px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    padding: 70px 30px 70px 30px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    padding: 50px 15px 50px 15px;
+  }
+  @media screen and (max-width: 349px) {
+    padding: 40px 10px 50px 10px;
+  }
 }
 
 .experience__about {
@@ -12,12 +24,30 @@
   font-weight: 700;
   margin-bottom: 60px;
   border-top: 1px solid $color-grey-line;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    font-size: 11px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    font-size: 9px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 9px;
+    margin-bottom: 30px;
+  }
 }
 
 .experience__container {
   @extend %flex-rows;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1140px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .experience__title {
@@ -27,6 +57,24 @@
   color: $yellow-color;
   margin: 0;
   min-width: 600px;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    font-size: 60px;
+    max-width: 500px;
+    min-width: 250px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 60px;
+    max-width: 100%;
+    min-width: auto;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 549px) {
+    font-size: 55px;
+    max-width: 100%;
+    min-width: auto;
+    margin-bottom: 40px;
+  }
 }
 
 .experience__right {
@@ -36,4 +84,13 @@
   margin: 0 0 15px;
   @extend %text-size-28;
   color: $color-button-hover;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    font-size: 21px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 549px) {
+    font-size: 18px;
+  }
 }
