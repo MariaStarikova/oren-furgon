@@ -4,6 +4,39 @@
   background-color: $color-background;
   padding: 100px 20px 50px 100px;
   height: 430px;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    padding: 80px 20px 30px 50px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    padding: 80px 30px 30px 30px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    padding: 60px 15px 10px 15px;
+  }
+  @media screen and (max-width: 349px) {
+    padding: 60px 10px 10px 10px;
+  }
+  @media screen and (min-width: 981px) and (max-width: 1140px) {
+    height: 402px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 980px) {
+    height: 372px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 899px) {
+    height: 343px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 799px) {
+    height: 314px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 650px) {
+    height: 380px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    height: 360px;
+  }
+  @media screen and (max-width: 349px) {
+    height: 280px;
+  }
 }
 
 .reviews__top {
@@ -12,6 +45,15 @@
   padding-bottom: 60px;
   margin-bottom: 40px;
   border-bottom: 1px solid $color-text-white;
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    padding-bottom: 35px;
+  }
+  @media screen and (max-width: 349px) {
+    padding-bottom: 25px;
+  }
 }
 
 .reviews__title {
@@ -19,6 +61,36 @@
   margin: 0;
   margin-right: 200px;
   @extend %text-size-45;
+  @media screen and (min-width: 1920px) {
+    margin-right: 800px;
+  }
+  @media screen and (min-width: 1281px) and (max-width: 1919px) {
+    margin-right: 400px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1140px) {
+    margin-right: 100px;
+    font-size: 35px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 799px) {
+    margin-right: 70px;
+    max-width: 350px;
+    font-size: 35px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 30px;
+    margin-right: auto;
+    max-width: 320px;
+  }
+  @media screen and (min-width: 400px) and (max-width: 549px) {
+    font-size: 29px;
+    margin-right: auto;
+    max-width: 190px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 21px;
+    margin-right: auto;
+    max-width: 150px;
+  }
 }
 
 .reviews__estimation {
@@ -27,6 +99,18 @@
   line-height: 0.9;
   font-weight: 400;
   margin: 0;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    font-size: 75px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 60px;
+  }
+  @media screen and (min-width: 400px) and (max-width: 549px) {
+    font-size: 58px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 50px;
+  }
 }
 
 .reviews__subtitle {
@@ -36,19 +120,83 @@
   font-weight: 700;
   margin: 0;
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    font-size: 11px;
+    line-height: 1.4;
+    // max-width: 60px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    font-size: 10px;
+    line-height: 1.2;
+    max-width: 52px;
+  }
+  @media screen and (min-width: 400px) and (max-width: 549px) {
+    font-size: 9px;
+    line-height: 1.2;
+    max-width: 52px;
+  }
+  @media screen and (max-width: 399px) {
+    font-size: 8px;
+    line-height: 1.2;
+    max-width: 44px;
+  }
 }
 
 .reviews__bottom {
   @extend %flex-rows;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 650px) and (max-width: 767px) {
+    height: 273px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 650px) {
+    height: 235px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    height: 210px;
+  }
+  @media screen and (max-width: 349px) {
+    height: 170px;
+  }
 }
 
 .reviews__img {
   max-width: 850px;
   object-fit: cover;
+  // @media screen and (min-width: 550px) and (max-width: 650px) {
+  //   height: 161px;
+  // }
+  @media screen and (max-width: 549px) {
+    width: 100%;
+    // margin-bottom: 0px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    // width: calc(100% - 60px);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 799px) {
+    max-width: 500px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 899px) {
+    max-width: 600px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 980px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 981px) and (max-width: 1140px) {
+    max-width: 800px;
+  }
 }
 
 .reviews__buttons {
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    margin-top: auto;
+  }
 }
 
 .reviews__button {
@@ -58,6 +206,12 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  padding: 0;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
 }
 
 .reviews__button:hover {

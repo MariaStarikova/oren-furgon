@@ -31,9 +31,9 @@ function Header() {
             <h2 className="header__subtitle">Услуги</h2>
             <img className="header__arrow" alt="" src={IconArrow} />
           </button>
-          <a className="header__link" href="#contacts">
+          {/* <a className="header__link" href="#contacts">
             Контакты
-          </a>
+          </a> */}
           <button className="header__button-phone" onClick={handlePhoneClick}>
             <p className="header__subtitle_btn">Записаться</p>
           </button>

@@ -4,24 +4,65 @@
   background-color: $color-background-site;
   @extend %flex-rows;
   gap: 50px;
-  padding: 100px 20px 100px 100px;
+  padding: 100px 100px 100px 100px;
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    padding: 40px 50px 100px 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 767px) {
+    padding: 40px 30px 70px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    padding: 25px 15px 70px 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media screen and (max-width: 349px) {
+    padding: 25px 10px 50px 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .brand__left {
   @extend %flex-columns;
   width: 50%;
+  @media screen and (max-width: 1140px) {
+    width: 100%;
+  }
 }
 
 .brand__title {
   @extend %text-size-28;
   margin: 0;
   max-width: 460px;
+  @media screen and (min-width: 1920px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 27px;
+  }
 }
 
 .brand__subtitle {
   max-width: 440px;
   font-size: 16px;
   margin-top: 35px;
+  @media screen and (min-width: 1920px) {
+    max-width: 650px;
+  }
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 15px;
+  }
 }
 
 .brand__right {
@@ -41,4 +82,14 @@
 .card__text {
   @extend %text-size-21;
   margin: 0;
+  @media screen and (min-width: 550px) and (max-width: 1140px) {
+    font-size: 19px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 549px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 349px) {
+    font-size: 16px;
+    font-weight: 450;
+  }
 }
