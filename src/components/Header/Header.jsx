@@ -5,8 +5,16 @@ import IconPhone from '../../images/icon__phone.svg';
 import IconArrow from '../../images/icon__arrow.svg';
 
 function Header() {
-  const handlePhoneClick = () => {
-    window.location.href = 'tel:+79320108888';
+  // const handlePhoneClick = () => {
+  //   window.location.href = 'tel:+79320108888';
+  // };
+
+  // Отправка сообщения на WhatsApp
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '89320108888';
+    const message = 'Привет, я хочу записаться на консультацию';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
   };
 
   const handleServicesClick = () => {
@@ -34,7 +42,7 @@ function Header() {
           {/* <a className="header__link" href="#contacts">
             Контакты
           </a> */}
-          <button className="header__button-phone" onClick={handlePhoneClick}>
+          <button className="header__button-phone" onClick={handleWhatsAppClick}>
             <p className="header__subtitle_btn">Записаться</p>
           </button>
         </div>
