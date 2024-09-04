@@ -12,7 +12,7 @@ function Header() {
   // Отправка сообщения на WhatsApp
   const handleWhatsAppClick = () => {
     const phoneNumber = '89320108888';
-    const message = 'Привет, я хочу записаться на консультацию';
+    const message = 'Здравствуйте, хочу получить консультацию по изготовлению фургона';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
