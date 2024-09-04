@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PhotoSlider.scss';
 import { photos } from '../../constants/Photos.js';
 
 function PhotoSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const preloadImages = () => {
+      photos.forEach((photo) => {
+        const img = new Image();
+        img.src = photo;
+      });
+    };
+
+    preloadImages();
+  }, []);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
