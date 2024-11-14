@@ -29,7 +29,7 @@
 
 ## Ссылки
 
-- [Проект на Javascript на Github Pages](https://mariastarikova.github.io/mesto/)
+- [Проект на Github Pages](https://mariastarikova.github.io/oren-furgon/)
 
 
 
